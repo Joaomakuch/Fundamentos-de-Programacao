@@ -2,19 +2,18 @@
 
 int main()
 {
-    int i1, i2, divis, rest;
+  char letra;
+  printf("Digite a letra que será convertida de maiuscula para minuscula: \n");
+  scanf("%c", &letra);
 
-    printf("Digite o primeiro valor: ");
-    scanf("%d", &i1);
-    printf("Digite o segundo valor: ");
-    scanf("%d", &i2);
+  if (letra >= 65 && letra <=90)
+  {
+    letra = letra+32;
+    printf("\n\n Letra convertida: %c", letra);
 
-    divis = i1/i2;
-    rest = i1 % i2;
-
-    printf("O resultado da divisão eh %d com resto %d", divis, rest);
-    /* Sendo i1=10 e i2=5 o resultado é 2 com resto 0
-       Sendo i1=12 e i2=5 o resultado é 2 com resto 2
-       */
-    return 0;
+  }
+  else{
+    printf("\n\n Letra invalida");
+  }
+  return 0;
 }
