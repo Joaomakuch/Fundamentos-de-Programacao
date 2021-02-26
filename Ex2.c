@@ -1,14 +1,15 @@
 #include <stdio.h>
-int main (){
- printf(" Esse eh um programa de saida de dados !!! \n" );
- printf("A seguir alguns exemplos com a funcao printf : \n" );
- printf("%d \n " , 65);
- printf("%d \n " , 65);
- printf("%d \n " , 65);
- printf("%c \n " , 'A');
- printf("%c \n " , 'A');
- printf("%d \n " , 10);
- printf("\n \n \n " ) ;
- printf(" Fim do Programa !!! " );
- return 0;
+        int main(){
+    float n1, n2, aux;
+
+    printf("Digite o primeiro valor: ");
+    scanf("%f", &n1);
+    printf("Digite o segundo valor: ");
+    scanf("%f", &n2);
+
+    aux = n1+n2;
+
+    printf("A soma de %.2f e %.2f eh igual a: %.2f", n1, n2, aux);
+    return 0;
+
 }
